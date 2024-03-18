@@ -4,14 +4,18 @@ import FacebookIcon from "./icons/FacebookIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 
-export default function MobileMenu({ showNav }: { showNav: boolean }) {
+export default function MobileMenu({ showNavbar }: { showNavbar: boolean }) {
   const [discoveringMusic, setDiscoveringMusic] = useState(false);
 
   return (
-    <nav className={`${!showNav ? "h-0" : "flex-1 py-6"} overflow-y-auto bg-light px-6 spring lg:hidden`}>
+    <nav
+      className={`${
+        !showNavbar ? "h-0" : "flex-1 py-6"
+      } overflow-y-auto bg-light px-6 spring lg:hidden`}
+    >
       <div
         className={`${
-          !showNav ? "h-0 opacity-0 invisible" : "opacity-1 visible"
+          !showNavbar ? "h-0 opacity-0 invisible" : "opacity-1 visible"
         } spring space-y-10`}
       >
         <div className="text-3xl uppercase flex flex-col gap-8 font-bold ">
