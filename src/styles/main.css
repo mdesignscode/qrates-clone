@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .link-secondary,
+  .link-primary {
+    @apply uppercase font-semibold text-lg;
+  }
+
+  .link-primary {
+    @apply bg-dark text-light rounded-full px-8 py-4;
+  }
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('/Poppins-Light.ttf') format('ttf');
+}
+
+:root {
+  --spring-easing: linear(0, 0.008, 0.033 2.1%, 0.133, 0.265 6.6%, 0.689 13%, 0.901 17%, 0.979, 1.039,
+      1.084, 1.113 25%, 1.123, 1.129 27.9% 29.4%, 1.124 31.1%, 1.105 34.1%,
+      1.044 41.2%, 1.017 44.9%, 0.997 48.9%, 0.986 53.2%, 0.984 59.6%, 0.997 72.8%,
+      1.001 80% 100%);
+  --spring-duration: 1s;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.spring {
+  transition-timing-function: var(--spring-easing);
+  transition-duration: var(--spring-duration);
+}
