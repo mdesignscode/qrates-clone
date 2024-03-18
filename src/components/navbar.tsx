@@ -16,7 +16,7 @@ export default function Navbar({
 }) {
   return (
     <>
-      <header className="sticky flex flex-col top-0">
+      <header className="flex flex-col">
         <div className="h-[65px] bg-light flex px-6 py-1 lg:px-10 lg:py-14 gap-8 items-center">
           <div className="flex items-center flex-1 gap-6">
             <span className="mr-auto lg:mr-0">

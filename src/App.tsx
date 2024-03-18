@@ -8,10 +8,10 @@ function App() {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <div className="h-[100dvh] [min-width:320px] bg-dark flex flex-col overflow-y-hidden">
+    <div className="h-[100dvh] [min-width:320px] bg-dark flex flex-col overflow-y-auto">
       <Navbar showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
       <main
-        className={`${!showNavbar ? "block" : "hidden"} h-full overflow-y-auto`}
+        className={`${!showNavbar ? "block" : "hidden"}`}
       >
         <Hero />
         <RecordFormats />
