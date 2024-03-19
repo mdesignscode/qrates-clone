@@ -9,7 +9,7 @@ export default function RecordFormats() {
       </p>
 
       <div className="flex flex-col lg:flex-row lg:border-t-2 border-dark">
-        <div className="text-center border-y-2 border-dark lg:border-y-0 lg:border-r-2 px-4 flex flex-col gap-8 py-8 lg:py-12 lg:px-20 lg:text-lg">
+        <div className="text-center border-y-2 border-dark lg:border-y-0 lg:border-r-2 px-4 flex flex-col gap-8 py-8 lg:py-12 lg:px-20 lg:text-lg lg:flex-1">
           <p className="text-3xl font-semibold lg:text-4xl">Vinyl</p>
           <p>
             We know how special pressed records are to you. Our products are
@@ -20,7 +20,7 @@ export default function RecordFormats() {
           <img src={vinyl} alt="" className="w-5/6 lg:w-full mx-auto" />
         </div>
 
-        <div className="text-center px-4 flex flex-col gap-8 py-8 lg:py-12 lg:px-20 lg:text-lg">
+        <div className="text-center px-4 flex flex-col gap-8 py-8 lg:py-12 lg:px-20 lg:text-lg lg:flex-1">
           <p className="text-3xl font-semibold lg:text-4xl">Cassette</p>
 
           <p>

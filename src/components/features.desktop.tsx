@@ -226,17 +226,22 @@ function StepNumber({ index }: { index: number }) {
       <span className="font-bold text-5xl bg-light border-4 border-dark rounded-full size-24 text-center grid place-content-center flex-none ">
         {index}
       </span>
-      <svg aria-hidden="true" width="5" className="flex-1">
-        <line
-          x1="2.5"
-          y1="0"
-          x2="2.5"
-          y2="100%"
-          stroke-width="5"
-          className="stroke-dark"
-        />
-      </svg>
-      <ChevronDownIcon className="relative bottom-7" size="size-12" />
+
+      {index !== 7 && (
+        <>
+          <svg aria-hidden="true" width="5" className="flex-1">
+            <line
+              x1="2.5"
+              y1="0"
+              x2="2.5"
+              y2="100%"
+              stroke-width="5"
+              className="stroke-dark"
+            />
+          </svg>
+          <ChevronDownIcon className="relative bottom-7" size="size-12" />
+        </>
+      )}
     </div>
   );
 }

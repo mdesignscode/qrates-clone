@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import { useState } from "react";
 import RecordFormats from "./components/recordFormats";
 import Features from "./components/features";
+import StartNewProject from "./components/newProject";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <RecordFormats />
         <Features />
+        <StartNewProject />
       </main>
     </div>
   );

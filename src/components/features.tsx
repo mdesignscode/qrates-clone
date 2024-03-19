@@ -29,10 +29,7 @@ export function FeatureHero({
 }) {
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <span className="border-2 border-dark px-3 py-1 bg-light mx-auto">
-        {provider}
-      </span>
-
+      <HeroTitle title={provider} />
       <p className="text-center text-2xl font-semibold mx-6 mt-8 lg:mb-4 lg:text-3xl">
         {heading}
       </p>
@@ -43,3 +40,9 @@ export function FeatureHero({
     </div>
   );
 }
+
+export const HeroTitle = ({ title }: { title: string }) => (
+  <span className="border-2 border-dark px-3 py-1 bg-light mx-auto">
+    {title}
+  </span>
+);
