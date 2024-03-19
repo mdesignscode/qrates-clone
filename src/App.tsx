@@ -5,6 +5,7 @@ import { useState } from "react";
 import RecordFormats from "./components/recordFormats";
 import Features from "./components/features";
 import StartNewProject from "./components/newProject";
+import Community from "./components/community";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -19,6 +20,7 @@ function App() {
         <RecordFormats />
         <Features />
         <StartNewProject />
+        <Community />
       </main>
     </div>
   );

@@ -4,15 +4,6 @@ import customerSupport from "../assets/images/customer_support.avif";
 import { HeroTitle } from "./features";
 
 export default function StartNewProject() {
-  const PrimaryLink = ({ border, text }: { border: string, text: string }) => (
-    <a
-      href="#"
-      className={`uppercase border-2 border-${border} bg-dark text-light rounded-full py-4 text-sm lg:min-w-[250px] lg:h-[50px] lg:grid lg:place-content-center`}
-    >
-      {text}
-    </a>
-  );
-
   return (
     <div className="bg-[#e4e5de]">
       <div className="bg-dark text-light flex flex-col lg:flex-row lg:justify-between text-center px-10 lg:px-16 py-16 gap-4">
@@ -65,3 +56,22 @@ export default function StartNewProject() {
     </div>
   );
 }
+
+export const PrimaryLink = ({
+  border,
+  text,
+  bg = "dark",
+  color = "light"
+}: {
+  border: string;
+  text: string;
+  bg?: string;
+  color?: string
+}) => (
+  <a
+    href="#"
+    className={`uppercase border-2 border-${border} bg-${bg} text-${color} rounded-full py-4 text-sm lg:min-w-[250px] lg:h-[50px] lg:grid lg:place-content-center`}
+  >
+    {text}
+  </a>
+);
