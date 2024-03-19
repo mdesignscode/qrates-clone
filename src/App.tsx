@@ -8,6 +8,7 @@ import StartNewProject from "./components/newProject";
 import Community from "./components/community";
 import Testimonies from "./components/testimonies";
 import Preview from "./components/preview";
+import Footer from "./components/footer";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         <Community />
         <Testimonies />
         <Preview />
+        <Footer />
       </main>
     </div>
   );

@@ -1,6 +1,6 @@
 const TwitterIcon = () => (
   <svg
-    fill="#000000"
+    fill="currentColor"
     width={40}
     height={40}
     version="1.1"

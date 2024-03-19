@@ -1,6 +1,6 @@
 const FacebookIcon = () => (
   <svg
-    fill="#000000"
+    fill="currentColor"
     width={50}
     height={50}
     viewBox="0 0 24 24"
