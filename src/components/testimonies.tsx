@@ -37,7 +37,7 @@ export default function Testimonies() {
       </div>
 
       <div className="flex flex-col items-start gap-6 lg:flex-1 lg:justify-around">
-        <HeroTitle isCenter={false} title="ARTISTS ON QRATES" />
+        <HeroTitle textSize="sm" isCenter={false} title="ARTISTS ON QRATES" />
 
         <div className="space-y-6">
           <p className="font-medium lg:text-xl mr-16 lg:mr-28">

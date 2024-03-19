@@ -61,16 +61,20 @@ export const PrimaryLink = ({
   border,
   text,
   bg = "dark",
-  color = "light"
+  color = "light",
+  textSize = "sm",
+  y = "4",
 }: {
   border: string;
   text: string;
   bg?: string;
-  color?: string
+  color?: string;
+  textSize?: string;
+  y?: string;
 }) => (
   <a
     href="#"
-    className={`uppercase border-2 border-${border} bg-${bg} text-${color} rounded-full py-4 text-sm lg:min-w-[250px] lg:h-[50px] lg:grid lg:place-content-center`}
+    className={`uppercase border-2 border-${border} bg-${bg} text-${color} rounded-full py-${y} text-${textSize} lg:min-w-[250px] lg:h-[50px] lg:grid lg:place-content-center`}
   >
     {text}
   </a>
