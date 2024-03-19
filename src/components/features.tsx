@@ -41,8 +41,18 @@ export function FeatureHero({
   );
 }
 
-export const HeroTitle = ({ title }: { title: string }) => (
-  <span className="border-2 border-dark px-3 py-1 bg-light mx-auto">
+export const HeroTitle = ({
+  title,
+  isCenter = true,
+}: {
+  title: string;
+  isCenter?: boolean;
+}) => (
+  <span
+    className={`border-2 border-dark px-3 py-1 bg-light ${!isCenter && "text-sm"} ${
+      isCenter && "mx-auto"
+    }`}
+  >
     {title}
   </span>
 );
