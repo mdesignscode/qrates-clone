@@ -6,7 +6,7 @@ export default function DesktopMenu() {
 
   return (
     <nav className="hidden lg:flex items-center gap-6 link-secondary">
-      <div className="relative">
+      <div className="relative flex-1">
         <button
           className="flex items-center gap-1 link-secondary"
           id="discover-music-button"
@@ -16,6 +16,7 @@ export default function DesktopMenu() {
         >
           Discover music
           <ChevronDownIcon
+            size="size-5"
             className={`spring ${
               discoveringMusic ? "-rotate-180" : "rotate-[360deg]"
             }`}

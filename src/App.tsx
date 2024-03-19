@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import { useState } from "react";
 import RecordFormats from "./components/recordFormats";
+import Features from "./components/features";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -15,6 +16,7 @@ function App() {
       >
         <Hero />
         <RecordFormats />
+        <Features />
       </main>
     </div>
   );

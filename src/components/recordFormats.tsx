@@ -4,13 +4,13 @@ import cassette from "../assets/images/cassette.avif";
 export default function RecordFormats() {
   return (
     <div className="bg-[#e4e5de]">
-      <p className="text-center text-3xl lg:py-14 px-8 py-10 font-semibold">
+      <p className="text-center text-3xl lg:py-24 lg:text:4xl px-8 py-10 font-semibold">
         Choose from two formats with promised quality
       </p>
 
       <div className="flex flex-col lg:flex-row lg:border-t-2 border-dark">
-        <div className="text-center border-y-2 border-dark lg:border-y-0 lg:border-r-2 px-4 flex flex-col gap-8 py-8 lg:px-14 lg:text-lg">
-          <p className="text-3xl font-semibold">Vinyl</p>
+        <div className="text-center border-y-2 border-dark lg:border-y-0 lg:border-r-2 px-4 flex flex-col gap-8 py-8 lg:py-12 lg:px-20 lg:text-lg">
+          <p className="text-3xl font-semibold lg:text-4xl">Vinyl</p>
           <p>
             We know how special pressed records are to you. Our products are
             built for fans, by fans. We make it easy for artists to press vinyl,
@@ -20,8 +20,8 @@ export default function RecordFormats() {
           <img src={vinyl} alt="" className="w-5/6 lg:w-full mx-auto" />
         </div>
 
-        <div className="text-center px-4 flex flex-col gap-8 py-8 lg:px-14 lg:text-lg">
-          <p className="text-3xl font-semibold">Cassette</p>
+        <div className="text-center px-4 flex flex-col gap-8 py-8 lg:py-12 lg:px-20 lg:text-lg">
+          <p className="text-3xl font-semibold lg:text-4xl">Cassette</p>
 
           <p>
             Cassettes have always been special to music fans and artists.

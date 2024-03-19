@@ -9,6 +9,7 @@ const config = {
         primary: "#fff804",
         accent: "#e280ff",
         secondary: "#81836c",
+        gray: "#e4e5de"
       }
     },
   },

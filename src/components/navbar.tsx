@@ -1,11 +1,11 @@
 import { Dispatch, SetStateAction } from "react";
 import "../styles/hamburger.css";
 // import "../styles/navbar.css";
-import DesktopMenu from "./desktopMenu";
+import DesktopMenu from "./menu.desktop";
 import CartIcon from "./icons/CartIcon";
 import QratesLogo from "./icons/QratesLogo";
 import SearchIcon from "./icons/SearchIcon";
-import MobileMenu from "./mobileMenu";
+import MobileMenu from "./menu.mobile";
 
 export default function Navbar({
   setShowNavbar,

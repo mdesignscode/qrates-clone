@@ -34,3 +34,9 @@ body {
   transition-timing-function: var(--spring-easing);
   transition-duration: var(--spring-duration);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px 1fr;
+  padding: 40px 20px 20px 20px;
+}

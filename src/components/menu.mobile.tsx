@@ -32,6 +32,7 @@ export default function MobileMenu({ showNavbar }: { showNavbar: boolean }) {
                 className={`spring ${
                   discoveringMusic ? "-rotate-180" : "rotate-[360deg]"
                 }`}
+                size="size-7"
               />
             </button>
 
